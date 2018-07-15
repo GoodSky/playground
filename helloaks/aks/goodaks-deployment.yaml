@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goodaks-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: goodaks
+  template:
+    metadata:
+      labels:
+        app: goodaks
+    spec:
+      containers:
+      - name: helloaks
+        image: goodacr.azurecr.io/helloaks:0.1
+        ports:
+        - containerPort: 80

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SERVICE_URL="http://localhost:5000"
+# SERVICE_URL="http://goodaks.westus2.cloudapp.azure.com:6637"
 
 print_header() {
     echo ""

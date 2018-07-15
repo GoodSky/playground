@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: goodkaks-service
+spec:
+  selector:
+    app: goodaks
+  ports:
+  - port: 6637
+    targetPort: 80

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: goodaks-loadbalancer
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 13.66.243.54
+  ports:
+  - port: 6637
+  selector:
+    app: goodaks-loadbalancer
