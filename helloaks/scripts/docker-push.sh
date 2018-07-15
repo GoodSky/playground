@@ -3,7 +3,7 @@
 VERSION=$(cat version.txt)
 IMAGE_TAG="helloaks:$VERSION"
 
-ACR_NAME="goodacr"
+ACR_NAME="badacr"
 ACR_URL="$ACR_NAME.azurecr.io"
 IMAGE_URL="$ACR_URL/$IMAGE_TAG"
 

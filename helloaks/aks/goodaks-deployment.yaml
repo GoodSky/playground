@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: helloaks
-        image: goodacr.azurecr.io/helloaks:0.1
+        image: badacr.azurecr.io/helloaks:0.1
         ports:
         - containerPort: 80
